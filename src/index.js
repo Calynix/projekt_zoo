@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css'; // Optional global styles
-import App from './App';  // Main App component
+import './index.css'; 
+import App from './App';  
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')  // The element to render React app
+  document.getElementById('root') 
 );
