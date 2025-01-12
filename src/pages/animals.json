@@ -1,50 +1,50 @@
 [
     {
-        "name": "Afrikanischer Löwe",
+        "name": "Simba",
         "age": "5 Jahre",
-        "species": "Panthera leo",
+        "species": "Afrikanischer Löwe (Panthera leo)",
         "description": "Der Afrikanische Löwe ist eine der größten Großkatzenarten und bekannt als 'König der Tiere'. Er lebt in offenen Savannen und Wäldern Afrikas und ist für seine mächtige Mähne und soziale Struktur bekannt.",
         "imageUrl": "https://www.wwf.de/fileadmin/_processed_/b/2/csm_afrikanischer-loewe-kenia-WW225871-c-richard-barrett-wwf-uk_27b1a562b7.jpg"
     },
     {
-        "name": "Tüpfelhyäne",
+        "name": "Imara",
         "age": "7 Jahre",
-        "species": "Crocuta crocuta",
+        "species": "Tüpfelhyäne (Crocuta crocuta)",
         "description": "Tüpfelhyänen sind in Afrika verbreitet und für ihre starken Kiefer und ihre komplexe soziale Struktur bekannt. Sie leben in Clans und sind sowohl Jäger als auch Aasfresser.",
         "imageUrl": "https://www.zootier-lexikon.org/images/k2/5d9bd784bfd234610bf8ba15e7ad6a4e.jpg"
     },
     {
-        "name": "Nördliche Giraffw",
+        "name": "Kazi",
         "age": "12 Jahre",
-        "species": "Giraffa camelopardalis",
+        "species": "Nördliche Giraffe (Giraffa camelopardalis)",
         "description": "Die Giraffe ist das höchste lebende Landtier und bekannt für ihren langen Hals und die markanten Flecken. Sie lebt in den offenen Savannen und Wäldern Afrikas.",
         "imageUrl": "https://observation.org/media/photo/5288823.jpg"
     },
     {
-        "name": "Fennek",
+        "name": "Nadir",
         "age": "4 Jahre",
-        "species": "Vulpes zerda",
+        "species": "Fennek (Vulpes zerda)",
         "description": "Der Fennek ist der kleinste Fuchs der Welt und lebt in den Wüstenregionen Nordafrikas. Er hat große Ohren, die ihm helfen, die Hitze zu regulieren und seine Beute zu orten.",
         "imageUrl": "https://www.wilhelma.de/fileadmin/_processed_/0/6/csm_Fennek_Knitter_81fbce2d91.jpg"
     },
     {
-        "name": "Harpye",
+        "name": "Tecu",
         "age": "15 Jahre",
-        "species": "Harpia harpyja",
+        "species": "Harpye (Harpia harpyja)",
         "description": "Die Harpye ist ein mächtiger Raubvogel, bekannt für ihre riesigen Krallen und markanten Gesichtszüge. Sie lebt in den Regenwäldern Mittel- und Südamerikas und ist ein Spitzenprädator.",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Harpia_harpyja_001_800.jpg"
     },
     {
-        "name": "Kaiserpinguin",
+        "name": "Paju",
         "age": "5 Jahre",
-        "species": "Aptenodytes forsteri",
+        "species": "Kaiserpinguin (Aptenodytes forsteri)",
         "description": "Der Kaiserpinguin ist der größte Pinguin der Welt und lebt in der Antarktis. Die Männchen kümmern sich um das Brutgeschäft, indem sie die Eier ausbrüten, während die Weibchen sich erholen.",
         "imageUrl": "https://www.tierchenwelt.de/images/stories/fotos/voegel/pinguine/kaiser_pinguin/kaiserpinguin_steckbrief_l.jpg"
     },
     {
-        "name": "Ringelrobbe",
+        "name": "Boba",
         "age": "8 Jahre",
-        "species": "Pusa hispida",
+        "species": "Ringelrobbe (Pusa hispida)",
         "description": "Die Ringelrobbe lebt in kalten Küstengebieten der Arktis und ist für das Muster auf ihrem Fell bekannt. Sie ist ein talentierter Schwimmer, der gut an das Leben im Wasser angepasst ist.",
         "imageUrl": "https://storage.googleapis.com/oceanwide_web/media-dynamic/cache/widen_1600/media/default/0001/07/23220c6b19d7c8b58883bd5e7020492f28372ba0.jpeg"
     }
