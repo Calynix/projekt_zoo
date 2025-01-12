@@ -1,0 +1,18 @@
+[
+    {
+      "name": "Erwachsenenticket",
+      "price": "25 CHF",
+      "additionalInfo": "Zugang zum ganzen Zoo und täglichen Shows."
+    },
+    {
+      "name": "Kinderticket",
+      "price": "15 CHF",
+      "additionalInfo": "Zugang zum ganzen Zoo und täglichen Shows. Kinder unter 6 Jahren haben freien Eintritt."
+    },
+    {
+      "name": "Familienticket",
+      "price": "70 CHF",
+      "additionalInfo": "Zwei Erwachsenentickets und bis zu 2 Kindertickets. Zugang zum ganzen Zoo und täglichen Shows sowie ein garantierter Parkplatz."
+    }
+  ]
+  
