@@ -4,6 +4,7 @@ import TicketPage from "./pages/TicketPrices";
 import AnimalProfilePage from "./pages/AnimalProfiles";
 import HomePage from "./pages/HomePage"; 
 import Header from "./components/Header"; 
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/tickets" element={<TicketPage />} />
         <Route path="/animals" element={<AnimalProfilePage />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };
