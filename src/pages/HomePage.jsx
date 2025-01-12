@@ -1,28 +1,29 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 function HomePage() {
   return (
-    <div className="home-page">
-      <header className="home-header">
-        <h1>Welcome to the Zoo!</h1>
-        <nav>
-          <ul className="dropdown-nav">
-            <li className="dropdown">
-              <button className="dropbtn">Categories</button>
-              <div className="dropdown-content">
-                <Link to="/animal-profiles">Animal Profiles</Link>
-                <Link to="/zoo-news">Zoo News</Link>
-                <Link to="/ticket-prices">Ticket Prices</Link>
-              </div>
-            </li>
-          </ul>
-        </nav>
+    <div style={{ margin: 0, padding: 0 }}>
+      <header style={{ textAlign: "center" }}>
+        <img 
+          style={{
+            width: "100%",
+            height: "auto",
+            display: "block",
+            objectFit: "cover",
+          }} 
+          src="https://zoo-live.rokka.io/header_half_md_1x/66a4e1002b74d1cd71493ae16ceb6c7b4e196fbb/0014359.jpg?h=8f9c3751&itok=bdvJ2iQ-" 
+          alt="Zoo Header" 
+        />
       </header>
-
-      <section className="home-content">
-        <p>Explore a variety of animals, read the latest zoo news, and learn about ticket prices!</p>
-      </section>
+      <h1 style={{
+        fontSize: "36px",
+        fontWeight: "bold",
+        color: "#000",
+        marginTop: "20px",  
+        textAlign: "center",  
+      }}>
+        Wilkommen im Zoo Zürich!
+      </h1>
     </div>
   );
 }
