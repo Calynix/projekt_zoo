@@ -19,7 +19,8 @@ function HomePage() {
         fontSize: "36px",
         fontWeight: "bold",
         color: "#000",
-        marginTop: "20px",  // Adds space between the image and the title
+        marginTop: "20px",  
+        textAlign: "center",  
       }}>
         Wilkommen im Zoo Zürich!
       </h1>
