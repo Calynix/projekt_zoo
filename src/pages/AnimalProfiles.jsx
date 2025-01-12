@@ -2,15 +2,17 @@ import React from "react";
 import animals from "./animals.json"; 
 import AnimalCard from "../components/AnimalCard"; 
 
-
 const AnimalProfilesPage = () => {
   return (
     <div style={{ textAlign: "center", padding: "16px" }}>
       <h2 style={{ fontSize: "24px", marginBottom: "16px" }}>Tierprofile</h2>
       <div
         style={{
-          display: "block",  
-          margin: "0 auto", 
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center", 
+          justifyContent: "center", 
+          margin: "0 auto",
         }}
       >
         {animals.map((animal, index) => (
