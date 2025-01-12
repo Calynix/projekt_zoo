@@ -8,7 +8,7 @@ const TicketCard = ({ name, price, additionalInfo }) => {
         borderRadius: "8px",
         padding: "16px",
         width: "350px",
-        backgroundColor: "rgba(255, 0, 0, 0.1)", // Pale translucent red background
+        backgroundColor: "rgb(230, 167, 167)", // Pale translucent red background
         fontFamily: "Arial, sans-serif",
         textAlign: "left", 
       }}
