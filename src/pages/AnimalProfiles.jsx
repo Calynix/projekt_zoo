@@ -1,39 +1,25 @@
-import React from 'react';
+import React from "react";
+import animals from "./animals.json"; 
+import AnimalCard from "../components/AnimalCard"; 
 
-const AnimalProfile = ({ name, description, imageUrl }) => {
+const AnimalProfilesPage = () => {
   return (
-    <div style={styles.container}>
-      <h2 style={styles.name}>{name}</h2>
-      <img src={imageUrl} alt={name} style={styles.image} />
-      <p style={styles.description}>{description}</p>
+    <div style={{ textAlign: "center", padding: "16px" }}>
+      <h2 style={{ fontSize: "24px", marginBottom: "16px" }}>Tierprofile</h2>
+      <div style={{ display: "flex", flexWrap: "wrap", gap: "16px", justifyContent: "center" }}>
+        {animals.map((animal, index) => (
+          <AnimalCard
+            key={index}
+            name={animal.name}
+            age={animal.age}
+            species={animal.species}
+            description={animal.description}
+            imageUrl={animal.imageUrl}
+          />
+        ))}
+      </div>
     </div>
   );
 };
 
-const styles = {
-  container: {
-    border: '1px solid #ddd',
-    borderRadius: '8px',
-    padding: '16px',
-    maxWidth: '400px',
-    margin: '16px auto',
-    textAlign: 'center',
-    backgroundColor: '#f9f9f9',
-  },
-  name: {
-    fontSize: '24px',
-    color: '#333',
-  },
-  image: {
-    width: '100%',
-    height: 'auto',
-    borderRadius: '8px',
-    margin: '16px 0',
-  },
-  description: {
-    fontSize: '16px',
-    color: '#555',
-  },
-};
-
-export default AnimalProfile;
+export default AnimalProfilesPage;
