@@ -11,12 +11,11 @@ const Header = () => {
     <header style={headerStyles}>
       <div style={logoStyles}>
         <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS3kjf6LkGXxffpY9gv1wNHqc60idWxK1Jdg&s"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Logo_Zoo_Z%C3%BCrich.svg/800px-Logo_Zoo_Z%C3%BCrich.svg.png"
           alt="Zoo Logo"
           style={logoImgStyles}
         />
       </div>
-      <h1 style={titleStyles}>Welcome to the Zoo!</h1>
       <div style={menuStyles}>
         <img
           src="https://cdn1.iconfinder.com/data/icons/the-basics/100/menu-drop_down-settings-512.png"
@@ -25,10 +24,7 @@ const Header = () => {
           style={menuIconStyles}
         />
         {isDropdownOpen && (
-          <select
-            onChange={(e) => window.location.href = e.target.value}
-            style={dropdownStyles}
-          >
+          <select onChange={(e) => window.location.href = e.target.value} style={dropdownStyles}>
             <option value="">Navigate to...</option>
             <option value="/tickets">Tickets</option>
             <option value="/animals">Animals</option>
@@ -45,8 +41,15 @@ const headerStyles = {
   alignItems: "center",
   justifyContent: "space-between",
   padding: "20px 40px",
-  backgroundColor: "#e0e0e0",
+  backgroundColor: "rgba(224, 224, 224, 0.0)",
   color: "#333",
+  border: "1px solid rgba(0, 0, 0, 0.0)",
+  borderRadius: "8px",
+  position: "fixed",
+  top: "0",
+  left: "0",
+  right: "0",
+  zIndex: "1000",
 };
 
 const logoStyles = {
@@ -54,15 +57,8 @@ const logoStyles = {
 };
 
 const logoImgStyles = {
-  width: "50px",
+  width: "70px",
   height: "auto",
-};
-
-const titleStyles = {
-  fontSize: "36px",
-  fontWeight: "bold",
-  flex: 1,
-  textAlign: "center",
 };
 
 const menuStyles = {
@@ -70,7 +66,7 @@ const menuStyles = {
 };
 
 const menuIconStyles = {
-  width: "30px",
+  width: "40px",
   cursor: "pointer",
 };
 
