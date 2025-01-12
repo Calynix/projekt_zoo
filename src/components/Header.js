@@ -31,7 +31,6 @@ const Header = () => {
             <option value=""> </option>
             <option value="/tickets">Tickets</option>
             <option value="/animals">Tiere</option>
-            <option value="/news">News</option>
           </select>
         )}
       </div>
