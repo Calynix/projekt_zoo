@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"; 
 
 const Header = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -10,11 +11,13 @@ const Header = () => {
   return (
     <header style={headerStyles}>
       <div style={logoStyles}>
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Logo_Zoo_Z%C3%BCrich.svg/800px-Logo_Zoo_Z%C3%BCrich.svg.png"
-          alt="Zoo Logo"
-          style={logoImgStyles}
-        />
+        <Link to="/">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Logo_Zoo_Z%C3%BCrich.svg/800px-Logo_Zoo_Z%C3%BCrich.svg.png"
+            alt="Zoo Logo"
+            style={logoImgStyles}
+          />
+        </Link>
       </div>
       <div style={menuStyles}>
         <img
