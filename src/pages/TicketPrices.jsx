@@ -8,7 +8,8 @@ const TicketPage = () => {
       style={{
         textAlign: "center",
         padding: "16px",
-        backgroundImage: "url('https://t3.ftcdn.net/jpg/07/73/83/00/360_F_773830001_nk8haVKgKavcmn2ViydKfBKdx5XtdAV6.jpg')",
+        backgroundImage:
+          "url('https://t4.ftcdn.net/jpg/01/34/09/39/360_F_134093991_0YDT4XoEbiFONVRGMz79n6PKJv1KpAFg.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
@@ -31,7 +32,7 @@ const TicketPage = () => {
             <TicketCard
               name={ticket.name}
               price={ticket.price}
-              description={ticket.description}
+              additionalInfo={ticket.additionalInfo} 
             />
           </div>
         ))}
