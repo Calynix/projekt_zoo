@@ -1,6 +1,6 @@
 import React from "react";
 
-const TicketCard = ({ name, price, additionalInfo }) => {
+const NewsCard = ({ newstitle, news, imageUrl }) => {
   return (
     <div
       style={{
@@ -13,19 +13,25 @@ const TicketCard = ({ name, price, additionalInfo }) => {
         textAlign: "left", 
       }}
     >
+              <img
+        src={imageUrl}
+        alt={newstitle}
+        style={{
+          width: "100%",
+          borderRadius: "8px",
+          marginBottom: "8px",
+        }}
+      />
+
       <h3 style={{ fontSize: "20px", color: "black", marginBottom: "10px" }}>
-        {name}
+        {newstitle}
       </h3>
 
       <p style={{ fontSize: "18px", color: "black", marginBottom: "8px" }}>
-        <strong>Price:</strong> {price}
-      </p>
-
-      <p style={{ fontSize: "16px", color: "black", marginBottom: "8px" }}>
-        <strong>Additional Information:</strong> {additionalInfo}
+        <strong>New Story:</strong> {news}
       </p>
     </div>
   );
 };
 
-export default TicketCard;
+export default NewsCard;

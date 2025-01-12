@@ -1,23 +1,22 @@
 import React from "react";
-import tickets from "./tickets.json";
-import TicketCard from "../components/TicketCard";
+import news from "./news.json";
+import NewsCard from "../components/NewsCard";
 
-const TicketPage = () => {
+const NewsPage = () => {
   return (
     <div
       style={{
         textAlign: "center",
         padding: "16px",
-        backgroundImage:
-          "url('https://png.pngtree.com/thumb_back/fw800/background/20240522/pngtree-a-view-of-chester-zoo-image_15680393.jpg')",
+        backgroundImage: "url('https://png.pngtree.com/background/20230611/original/pngtree-some-animals-are-at-a-zoo-looking-at-rocks-and-water-picture-image_3168879.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
         backgroundRepeat: "no-repeat",
-        minHeight: "100vh",
+        minHeight: "100vh", 
       }}
     >
-      <h2 style={{ fontSize: "24px", marginBottom: "16px", color: "black" }}>Ticketpreise</h2>
+      <h2 style={{ fontSize: "24px", marginBottom: "16px", color: "black" }}>News im Zoo!</h2>
       <div
         style={{
           display: "flex",
@@ -27,18 +26,18 @@ const TicketPage = () => {
           margin: "0 auto",
         }}
       >
-        {tickets.map((ticket, index) => (
+        {news.map((news, index) => (
           <div key={index} style={{ marginBottom: "20px" }}>
-            <TicketCard
-              name={ticket.name}
-              price={ticket.price}
-              additionalInfo={ticket.additionalInfo} 
+            <NewsCard
+              newstitle={news.newstitle}
+              news={news.news}
+              imageUrl={news.imageUrl}
             />
           </div>
         ))}
       </div>
     </div>
   );
-};
-
-export default TicketPage;
+  };
+  
+    export default NewsPage;
