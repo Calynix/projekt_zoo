@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -27,11 +27,14 @@ const Header = () => {
           style={menuIconStyles}
         />
         {isDropdownOpen && (
-          <select onChange={(e) => window.location.href = e.target.value} style={dropdownStyles}>
-            <option value=""> </option>
-            <option value="/tickets">Tickets</option>
-            <option value="/animals">Tiere</option>
-          </select>
+          <div style={dropdownMenuStyles}>
+            <Link to="/tickets" style={dropdownItemStyles}>
+              Tickets
+            </Link>
+            <Link to="/animals" style={dropdownItemStyles}>
+              Tiere
+            </Link>
+          </div>
         )}
       </div>
     </header>
@@ -45,8 +48,6 @@ const headerStyles = {
   padding: "20px 40px",
   backgroundColor: "rgba(224, 224, 224, 0.0)",
   color: "#333",
-  border: "1px solid rgba(0, 0, 0, 0.0)",
-  borderRadius: "8px",
   position: "fixed",
   top: "0",
   left: "0",
@@ -72,12 +73,24 @@ const menuIconStyles = {
   cursor: "pointer",
 };
 
-const dropdownStyles = {
+const dropdownMenuStyles = {
   position: "absolute",
-  top: "40px",
+  top: "50px",  
   right: "0",
+  backgroundColor: "#fff",
+  boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
+  borderRadius: "8px",
   padding: "10px",
-  fontSize: "16px",
+  minWidth: "150px",
+  zIndex: "1001",
+};
+
+const dropdownItemStyles = {
+  padding: "10px",
+  textDecoration: "none",
+  color: "#333",
+  fontSize: "18px",
+  display: "block", 
 };
 
 export default Header;
