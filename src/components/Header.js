@@ -28,9 +28,9 @@ const Header = () => {
         />
         {isDropdownOpen && (
           <select onChange={(e) => window.location.href = e.target.value} style={dropdownStyles}>
-            <option value="">Navigate to...</option>
+            <option value=""> </option>
             <option value="/tickets">Tickets</option>
-            <option value="/animals">Animals</option>
+            <option value="/animals">Tiere</option>
             <option value="/news">News</option>
           </select>
         )}
