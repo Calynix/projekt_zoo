@@ -4,7 +4,7 @@ const Header = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
-    setDropdownOpen(!isDropdownOpen);
+    setDropdownOpen((prevState) => !prevState);
   };
 
   return (
