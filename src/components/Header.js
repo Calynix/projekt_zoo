@@ -34,6 +34,9 @@ const Header = () => {
             <Link to="/animals" style={dropdownItemStyles}>
               Tiere
             </Link>
+            <Link to="/news" style={dropdownItemStyles}>
+              News
+            </Link>
           </div>
         )}
       </div>

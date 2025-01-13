@@ -8,7 +8,7 @@ const AnimalProfilesPage = () => {
       style={{
         textAlign: "center",
         padding: "16px",
-        backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_PkH0PexSyJYzl-LjQiUtup8-yHMqX3BBgw&s')",
+        backgroundImage: "url('https://png.pngtree.com/thumb_back/fw800/background/20240522/pngtree-a-view-of-chester-zoo-image_15680392.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
@@ -16,7 +16,7 @@ const AnimalProfilesPage = () => {
         minHeight: "100vh", 
       }}
     >
-      <h2 style={{ fontSize: "24px", marginBottom: "16px", color: "white" }}>Unsere Tiere</h2>
+      <h2 style={{ fontSize: "24px", marginBottom: "16px", color: "black" }}>Unsere Tiere</h2>
       <div
         style={{
           display: "flex",
